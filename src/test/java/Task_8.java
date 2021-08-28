@@ -23,7 +23,7 @@ public class Task_8 {
         driver.get("file:///D:/Test-project/Automationproject-Borisova-Anna/src/task_8/index.html");
     }
 
-    @Test // here select try
+    @Test
     public void test1(){
         List<WebElement> head = driver.findElements(By.xpath("//table//th[1]"));
         Map<String, List<String>> data = new HashMap<>();
