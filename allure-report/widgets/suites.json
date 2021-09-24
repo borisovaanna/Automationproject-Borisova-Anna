@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "9a362966916d8a24cddd019c70290f9f",
+    "name" : "Lecture 10",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 6
+    }
+  } ]
+}

@@ -1,0 +1,61 @@
+[ {
+  "uid" : "2fa3f5d5b46e699c",
+  "name" : "loginToApplication_Test",
+  "time" : {
+    "start" : 1631732552970,
+    "stop" : 1631732553773,
+    "duration" : 803
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5bd34a652c1845ee",
+  "name" : "loginToApplication_Test",
+  "time" : {
+    "start" : 1631732553778,
+    "stop" : 1631732554633,
+    "duration" : 855
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b62db507bae26795",
+  "name" : "loginToApplication_Test",
+  "time" : {
+    "start" : 1631732547649,
+    "stop" : 1631732551174,
+    "duration" : 3525
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1399c5c304c2b1e9",
+  "name" : "loginToApplication_Test",
+  "time" : {
+    "start" : 1631732554641,
+    "stop" : 1631732555699,
+    "duration" : 1058
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e145a222ea16acd9",
+  "name" : "loginToApplication_Test",
+  "time" : {
+    "start" : 1631732551181,
+    "stop" : 1631732552962,
+    "duration" : 1781
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a87673b97f290beb",
+  "name" : "loginToApplication_Test",
+  "time" : {
+    "start" : 1631732538064,
+    "stop" : 1631732546782,
+    "duration" : 8718
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

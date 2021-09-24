@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Sep 15 22:02:33 MSK 2021","Wed Sep 15 22:02:34 MSK 2021","855","Lecture 10","Login to Application","Task_10","Task_10","loginToApplication_Test","loginToApplication_Test","Login to app"
+"broken","Wed Sep 15 22:02:18 MSK 2021","Wed Sep 15 22:02:26 MSK 2021","8718","Lecture 10","Login to Application","Task_10","Task_10","loginToApplication_Test","loginToApplication_Test","Login to app"
+"passed","Wed Sep 15 22:02:31 MSK 2021","Wed Sep 15 22:02:32 MSK 2021","1781","Lecture 10","Login to Application","Task_10","Task_10","loginToApplication_Test","loginToApplication_Test","Login to app"
+"passed","Wed Sep 15 22:02:34 MSK 2021","Wed Sep 15 22:02:35 MSK 2021","1058","Lecture 10","Login to Application","Task_10","Task_10","loginToApplication_Test","loginToApplication_Test","Login to app"
+"passed","Wed Sep 15 22:02:32 MSK 2021","Wed Sep 15 22:02:33 MSK 2021","803","Lecture 10","Login to Application","Task_10","Task_10","loginToApplication_Test","loginToApplication_Test","Login to app"
+"passed","Wed Sep 15 22:02:27 MSK 2021","Wed Sep 15 22:02:31 MSK 2021","3525","Lecture 10","Login to Application","Task_10","Task_10","loginToApplication_Test","loginToApplication_Test","Login to app"

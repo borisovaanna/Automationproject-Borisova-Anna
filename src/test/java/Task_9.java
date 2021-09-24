@@ -16,7 +16,7 @@ public class Task_9 extends BaseTest {
         loginPage.openPage();
     }
 
-    //@Test(priority = 1)
+    @Test(priority = 1)
     public void loginToApplicationStandard_Test(){
         loginPage.openPage()
                 .verifyLoginPage()
@@ -24,7 +24,7 @@ public class Task_9 extends BaseTest {
         productPage.verifyProductPage();
     }
 
-    //@Test(priority = 2)
+    @Test(priority = 2)
     public void loginToApplicationProblem_Test() {
         loginPage.openPage()
                 .verifyLoginPage()
@@ -32,7 +32,7 @@ public class Task_9 extends BaseTest {
         productPage.verifyProductPage();
     }
 
-    //@Test(priority = 3)
+    @Test(priority = 3)
     public void loginToApplicationLocked_Test() {
         loginPage.openPage()
                 .verifyLoginPage()
@@ -40,7 +40,7 @@ public class Task_9 extends BaseTest {
                 .checkErrorText("Epic sadface: Sorry, this user has been locked out.");
     }
 
-    //@Test(priority = 4)
+    @Test(priority = 4)
     public void addSauceLabsBackpackInCart_Test() {
         loginPage.openPage()
                 .verifyLoginPage()
@@ -52,7 +52,7 @@ public class Task_9 extends BaseTest {
                 .checkItemDescriptionInCart("Sauce Labs Backpack");
     }
 
-    //@Test(priority = 5)
+    @Test(priority = 5)
     public void removeSauceLabsBackpackInCart_Test() {
         loginPage.openPage()
                 .verifyLoginPage()
