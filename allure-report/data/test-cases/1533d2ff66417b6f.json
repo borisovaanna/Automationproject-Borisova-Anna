@@ -1,12 +1,12 @@
 {
-  "uid" : "1399c5c304c2b1e9",
+  "uid" : "1533d2ff66417b6f",
   "name" : "loginToApplication_Test",
   "fullName" : "Task_10.loginToApplication_Test",
-  "historyId" : "5124bc622dbe071016349b34bf7c7bac",
+  "historyId" : "44621de8b961185417148269c48207ac",
   "time" : {
-    "start" : 1631732554641,
-    "stop" : 1631732555699,
-    "duration" : 1058
+    "start" : 1632575164707,
+    "stop" : 1632575174216,
+    "duration" : 9509
   },
   "description" : "Login to app",
   "descriptionHtml" : "<p>Login to app</p>\n",
@@ -16,52 +16,52 @@
   "beforeStages" : [ {
     "name" : "setUpDriver",
     "time" : {
-      "start" : 1631732519085,
-      "stop" : 1631732527063,
-      "duration" : 7978
+      "start" : 1632575144355,
+      "stop" : 1632575156547,
+      "duration" : 12192
     },
     "description" : "",
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
     "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   }, {
     "name" : "preconditions",
     "time" : {
-      "start" : 1631732527202,
-      "stop" : 1631732536727,
-      "duration" : 9525
+      "start" : 1632575156549,
+      "stop" : 1632575161110,
+      "duration" : 4561
     },
     "description" : "",
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
     "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   } ],
   "afterStages" : [ {
     "name" : "closeDriver",
     "time" : {
-      "start" : 1631732555721,
-      "stop" : 1631732558914,
-      "duration" : 3193
+      "start" : 1632575188135,
+      "stop" : 1632575191312,
+      "duration" : 3177
     },
     "description" : "",
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
     "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   } ],
   "labels" : [ {
     "name" : "package",
@@ -77,7 +77,7 @@
     "value" : "Lecture 10"
   }, {
     "name" : "suite",
-    "value" : "Login to Application"
+    "value" : "Login to app"
   }, {
     "name" : "subSuite",
     "value" : "Task_10"
@@ -86,7 +86,7 @@
     "value" : "DESKTOP-JBSCKF2"
   }, {
     "name" : "thread",
-    "value" : "7992@DESKTOP-JBSCKF2.main(1)"
+    "value" : "4752@DESKTOP-JBSCKF2.TestNG-tests-1(14)"
   }, {
     "name" : "framework",
     "value" : "testng"
@@ -99,13 +99,13 @@
   } ],
   "parameters" : [ {
     "name" : "arg0",
-    "value" : "КрПне"
+    "value" : "standard_user"
   }, {
     "name" : "arg1",
-    "value" : "ьтРа"
+    "value" : "secret_sauce"
   }, {
     "name" : "arg2",
-    "value" : "Epic sadface: Username and password do not match any user in this service"
+    "value" : "null"
   } ],
   "links" : [ ],
   "hidden" : false,
@@ -116,6 +116,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "1399c5c304c2b1e9.json",
-  "parameterValues" : [ "КрПне", "ьтРа", "Epic sadface: Username and password do not match any user in this service" ]
+  "source" : "1533d2ff66417b6f.json",
+  "parameterValues" : [ "standard_user", "secret_sauce", "null" ]
 }

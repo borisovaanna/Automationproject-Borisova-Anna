@@ -3,8 +3,6 @@ import PageObject.LoginPage;
 import PageObject.ProductPage;
 import PageObject.ProductSortPage;
 import driver.BaseTest;
-import io.qameta.allure.Description;
-import io.qameta.allure.Step;
 import org.testng.annotations.*;
 
 import static PageObject.ProductSortPage.Links.*;
@@ -14,8 +12,6 @@ public class Task_10_2 extends BaseTest {
     ProductPage productPage = new ProductPage();
     ProductSortPage productSortPage = new ProductSortPage();
 
-    @Description("Check sort items")
-
     @BeforeClass(groups = "Tests about price sort")
     public void preconditions(){
         loginPage.openPage()
@@ -24,8 +20,7 @@ public class Task_10_2 extends BaseTest {
         productPage.verifyProductPage();
     }
 
-    @Step("Check sort items on price from low to high")
-    @Test(priority = 1, groups = "Tests about price sort", dependsOnMethods = "Links_Test_AZ")
+    @Test(priority = 1, groups = "Tests about price sort")
     public void Links_Test_LowToHigh() {
         productSortPage
                 .clickProductSortContainer()
@@ -34,7 +29,6 @@ public class Task_10_2 extends BaseTest {
 
     }
 
-    @Step("Check sort items on price from high to low")
     @Test(priority = 2, groups = "Tests about price sort", dependsOnMethods = "Links_Test_LowToHigh")
     public void Links_Test_HighToLow() {
         productSortPage
@@ -42,7 +36,6 @@ public class Task_10_2 extends BaseTest {
                 .clicklinks(HILO)
                 .checkReverseSortPrices();}
 
-    @Step("Check sort items on name from A to Z")
     @Test(priority = 3, dependsOnMethods = "Links_Test_ZA")
     public void Links_Test_AZ() {
         productSortPage
@@ -51,7 +44,6 @@ public class Task_10_2 extends BaseTest {
                 .checkSortNames();
     }
 
-    @Step("Check sort items on name from Z to A")
     @Test(priority = 4)
     public void Links_Test_ZA() {
         productSortPage

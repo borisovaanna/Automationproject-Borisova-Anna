@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" name="Lecture 10" parallel="tests">
-    <test name="Login to app" enabled="false">
+    <test name="Login to app">
         <classes>
             <class name="Task_10"></class>
         </classes>
     </test>
-    <test name="Repeat add/delete item">
+    <test name="Actions with item" enabled="false">
         <classes>
             <class name="Task_10_1"></class>
         </classes>

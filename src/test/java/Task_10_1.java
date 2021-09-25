@@ -18,7 +18,8 @@ public class Task_10_1 extends BaseTest {
                 .loginToApplication("standard_user", "secret_sauce");
     }
 
-    @Test(description = "Repeat add/delete item", invocationCount = 3, timeOut = 3000, retryAnalyzer = Retry.class)
+
+    @Test(invocationCount = 3, timeOut = 3000, retryAnalyzer = Retry.class)
     public void addSauceLabsBackpackInCart_Test() throws InterruptedException {
         Thread.sleep(2000);
         productPage.verifyProductPage()

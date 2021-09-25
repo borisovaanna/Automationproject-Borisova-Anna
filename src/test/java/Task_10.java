@@ -1,11 +1,8 @@
 
 import PageObject.LoginPage;
-import PageObject.ProductPage;
 import driver.BaseTest;
 import driver.Listener;
-import io.qameta.allure.Attachment;
 import io.qameta.allure.Description;
-import io.qameta.allure.Step;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -31,7 +28,8 @@ public class Task_10 extends BaseTest {
         };
     }
 
-    @Test(description = "Login to app", dataProvider = "Данные для входа на сайт", expectedExceptions = AssertionError.class)
+    @Description("Login to app")
+    @Test(dataProvider = "Данные для входа на сайт", expectedExceptions = AssertionError.class)
     public void loginToApplication_Test(String username, String password, String error) {
         if (error == null || error == "Epic sadface: Username is required") {
             loginPage.openPage()
