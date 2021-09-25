@@ -1,5 +1,6 @@
 package PageObject;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
@@ -63,6 +64,7 @@ public class ProductSortPage extends BasePage{
         return this;
     }
 
+    @Step("Check sort items on price from low to high")
     public ProductSortPage checkSortPrices(){
         List<Double> actualData = getDriver().findElements(prices).stream()
                 .map(data -> data.getText().replace("$", ""))
@@ -75,6 +77,7 @@ public class ProductSortPage extends BasePage{
         return this;
     }
 
+    @Step("Check sort items on price from high to low")
     public ProductSortPage checkReverseSortPrices(){
         List<Double> actualData = getDriver().findElements(prices).stream()
                 .map(data -> data.getText().replace("$", ""))

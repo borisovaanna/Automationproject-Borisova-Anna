@@ -4,22 +4,74 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".title\"}\n  (Session info: chrome=93.0.4577.82)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-JBSCKF2', ip: '192.168.100.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\\Users\\Slomali.by\\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:52763}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cd8589a7e4f592b47919f3c103e7f64f\n*** Element info: {Using=css selector, value=.title}",
+      "name" : "\nMethod Task_10.loginToApplication_Test(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task_10@4a7761b1] should have thrown an exception of type class java.lang.AssertionError",
       "children" : [ {
         "name" : "loginToApplication_Test",
-        "uid" : "a87673b97f290beb",
-        "parentUid" : "af423c2fc45d5d5a9e49da521a46cc53",
+        "uid" : "c53bf994fd5f69e6",
+        "parentUid" : "c07542f01580629a8b85a0e847d90020",
         "status" : "broken",
         "time" : {
-          "start" : 1631732538064,
-          "stop" : 1631732546782,
-          "duration" : 8718
+          "start" : 1632575178745,
+          "stop" : 1632575182648,
+          "duration" : 3903
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "standard_user1", "secret_sauce", "null" ]
+        "parameters" : [ "123", "123", "Epic sadface: Username and password do not match any user in this service" ]
+      }, {
+        "name" : "loginToApplication_Test",
+        "uid" : "3350f07ba1bba99f",
+        "parentUid" : "c07542f01580629a8b85a0e847d90020",
+        "status" : "broken",
+        "time" : {
+          "start" : 1632575182679,
+          "stop" : 1632575184498,
+          "duration" : 1819
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ " ", " ", "Epic sadface: Username is required" ]
+      }, {
+        "name" : "loginToApplication_Test",
+        "uid" : "1a4ba7bf1a70a046",
+        "parentUid" : "c07542f01580629a8b85a0e847d90020",
+        "status" : "broken",
+        "time" : {
+          "start" : 1632575184511,
+          "stop" : 1632575185674,
+          "duration" : 1163
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "@_", "!&", "Epic sadface: Username and password do not match any user in this service" ]
+      }, {
+        "name" : "loginToApplication_Test",
+        "uid" : "aa5091ae834b2505",
+        "parentUid" : "c07542f01580629a8b85a0e847d90020",
+        "status" : "broken",
+        "time" : {
+          "start" : 1632575185679,
+          "stop" : 1632575187226,
+          "duration" : 1547
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "user", "sauce", "Epic sadface: Username and password do not match any user in this service" ]
+      }, {
+        "name" : "loginToApplication_Test",
+        "uid" : "bd1f881f7663a28f",
+        "parentUid" : "c07542f01580629a8b85a0e847d90020",
+        "status" : "broken",
+        "time" : {
+          "start" : 1632575187232,
+          "stop" : 1632575188130,
+          "duration" : 898
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "КрПне", "ьтРа", "Epic sadface: Username and password do not match any user in this service" ]
       } ],
-      "uid" : "af423c2fc45d5d5a9e49da521a46cc53"
+      "uid" : "c07542f01580629a8b85a0e847d90020"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]
