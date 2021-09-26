@@ -1,8 +1,7 @@
-package PageObject;
+package PageObject.Saucedemo;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import static driver.DriverCreation.getDriver;
 
 public class LoginPage extends BasePage{
     private By username = By.id("user-name");

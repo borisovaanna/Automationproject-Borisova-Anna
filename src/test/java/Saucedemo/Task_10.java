@@ -1,5 +1,6 @@
+package Saucedemo;
 
-import PageObject.LoginPage;
+import PageObject.Saucedemo.LoginPage;
 import driver.BaseTest;
 import driver.Listener;
 import io.qameta.allure.Description;

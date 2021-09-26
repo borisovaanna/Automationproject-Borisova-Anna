@@ -1,11 +1,17 @@
-package PageObject;
+package PageObject.Saucedemo;
 
+import driver.DriverCreation;
 import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import static driver.DriverCreation.getDriver;
 
 public class BasePage {
+
+    protected WebDriverWait wait = new WebDriverWait(DriverCreation.getDriver(), 10);
+
     protected void open(String url){
         getDriver().get(url);
     }
@@ -28,4 +34,5 @@ public class BasePage {
             Assert.assertTrue(getDriver().findElement(element).isDisplayed(), "Element :: " + elements + " is not exist.");
         }
     }
+
 }

@@ -1,6 +1,8 @@
-import PageObject.CartPage;
-import PageObject.LoginPage;
-import PageObject.ProductPage;
+package Saucedemo;
+
+import PageObject.Saucedemo.CartPage;
+import PageObject.Saucedemo.LoginPage;
+import PageObject.Saucedemo.ProductPage;
 import driver.BaseTest;
 import driver.Retry;
 import org.testng.annotations.BeforeTest;
