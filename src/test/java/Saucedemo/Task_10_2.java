@@ -1,11 +1,12 @@
+package Saucedemo;
 
-import PageObject.LoginPage;
-import PageObject.ProductPage;
-import PageObject.ProductSortPage;
+import PageObject.Saucedemo.LoginPage;
+import PageObject.Saucedemo.ProductPage;
+import PageObject.Saucedemo.ProductSortPage;
 import driver.BaseTest;
 import org.testng.annotations.*;
 
-import static PageObject.ProductSortPage.Links.*;
+import static PageObject.Saucedemo.ProductSortPage.Links.*;
 
 public class Task_10_2 extends BaseTest {
     LoginPage loginPage = new LoginPage();

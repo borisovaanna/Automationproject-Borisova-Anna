@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Welcome to the-internet">
+    <test name="Check checkbox in Dynamic Controls">
+        <classes>
+            <class name="HerokuApp.Checkbox"/>
+        </classes>
+    </test>
+    <test name="Check input in Dynamic Controls">
+        <classes>
+            <class name="HerokuApp.Input"/>
+        </classes>
+    </test>
+</suite>

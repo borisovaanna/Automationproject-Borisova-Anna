@@ -1,10 +1,9 @@
-package PageObject;
+package PageObject.Saucedemo;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
