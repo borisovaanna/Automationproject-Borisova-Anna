@@ -1,11 +1,11 @@
 package PageObject.HerokuApp;
 
-import PageObject.Saucedemo.BasePage;
+import PageObject.BasePage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
-import static PageObject.HerokuApp.HomePageLinksEnum.DYNAMIC_CONTROLS;
 import static driver.DriverCreation.getDriver;
 
 public class DynamicControls extends BasePage {
@@ -17,8 +17,12 @@ public class DynamicControls extends BasePage {
     private By enableBtn = By.cssSelector("#input-example>button");
     private By textBackFromEnable = By.cssSelector("#input-example>p");
 
+    public DynamicControls(WebDriver driver) {
+        super(driver);
+    }
+
     public DynamicControls verifyPageTitle() {
-        Assert.assertEquals(getTextElement(title), DYNAMIC_CONTROLS.getLinkText());
+        Assert.assertEquals(getTextElement(title), HomePageLinksEnum.DYNAMIC_CONTROLS.getLinkText());
         return this;
     }
 

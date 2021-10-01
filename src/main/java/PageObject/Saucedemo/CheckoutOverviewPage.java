@@ -1,9 +1,11 @@
 package PageObject.Saucedemo;
 
+import PageObject.BasePage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-public class CheckoutOverviewPage extends BasePage{
+public class CheckoutOverviewPage extends BasePage {
     private By titleOfCheckoutOverview = By.xpath("//span[@class = \"title\"]");
     private By itemName = By.xpath("//div[@class = \"inventory_item_name\"]");
     private By itemPrice = By.xpath("//div[@class = \"inventory_item_price\"]");
@@ -13,6 +15,10 @@ public class CheckoutOverviewPage extends BasePage{
     private By tax = By.xpath("//div[@class = \"summary_tax_label\"]");
     private By totalSum = By.xpath("//div[@class = \"summary_total_label\"]");
     private By finishBtm = By.id("finish");
+
+    public CheckoutOverviewPage(WebDriver driver) {
+        super(driver);
+    }
 
     public CheckoutOverviewPage verifyCheckoutOverviewPage() {
         isDisplayed(titleOfCheckoutOverview);

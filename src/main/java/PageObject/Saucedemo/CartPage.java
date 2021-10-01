@@ -1,9 +1,11 @@
 package PageObject.Saucedemo;
 
+import PageObject.BasePage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-public class CartPage extends BasePage{
+public class CartPage extends BasePage {
     private By titleOfCart = By.xpath("//span[@class = \"title\"]");
     private By qtyLogo = By.xpath("//div[@class = \"cart_quantity_label\"]");
     private By descriptionLogo = By.xpath("//div[@class = \"cart_desc_label\"]");
@@ -12,6 +14,10 @@ public class CartPage extends BasePage{
     private By removeBtn = By.id("remove-sauce-labs-backpack");
     private By continueShopBtn = By.id("continue-shopping");
     private By checkoutBtn = By.cssSelector("#checkout");
+
+    public CartPage(WebDriver driver) {
+        super(driver);
+    }
 
     public CartPage verifyCartPage() {
         isDisplayed(titleOfCart, qtyLogo, descriptionLogo);

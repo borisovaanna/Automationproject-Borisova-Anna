@@ -1,13 +1,19 @@
 package PageObject.Saucedemo;
 
+import PageObject.BasePage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
-public class CheckoutPage extends BasePage{
+public class CheckoutPage extends BasePage {
     private By titleOfCheckout = By.xpath("//span[@class = \"title\"]");
     private By firstName = By.id("first-name");
     private By lastName = By.id("last-name");
     private By zipCode = By.id("postal-code");
     private By continueBtn = By.id("continue");
+
+    public CheckoutPage(WebDriver driver) {
+        super(driver);
+    }
 
     public CheckoutPage verifyCheckoutPage() {
         isDisplayed(titleOfCheckout);

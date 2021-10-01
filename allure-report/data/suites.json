@@ -2,128 +2,50 @@
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
   "children" : [ {
-    "name" : "Lecture 10",
+    "name" : "Lecture 12",
     "children" : [ {
-      "name" : "Login to app",
+      "name" : "Dynamic Controls Checkbox",
       "children" : [ {
-        "name" : "Task_10",
+        "name" : "HerokuApp.Checkbox",
         "children" : [ {
-          "name" : "loginToApplication_Test",
-          "uid" : "1533d2ff66417b6f",
-          "parentUid" : "20ce66b55513b373a7fb2527fccc3cf5",
+          "name" : "dynamicControlsCheckbox_Test",
+          "uid" : "8e60277e1993a1bc",
+          "parentUid" : "ecf5feec55e8f0ef1d90c73f3d031e08",
           "status" : "passed",
           "time" : {
-            "start" : 1632575164707,
-            "stop" : 1632575174216,
-            "duration" : 9509
+            "start" : 1632853466814,
+            "stop" : 1632853492697,
+            "duration" : 25883
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "standard_user", "secret_sauce", "null" ]
-        }, {
-          "name" : "loginToApplication_Test",
-          "uid" : "c53bf994fd5f69e6",
-          "parentUid" : "20ce66b55513b373a7fb2527fccc3cf5",
-          "status" : "broken",
-          "time" : {
-            "start" : 1632575178745,
-            "stop" : 1632575182648,
-            "duration" : 3903
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ "123", "123", "Epic sadface: Username and password do not match any user in this service" ]
-        }, {
-          "name" : "loginToApplication_Test",
-          "uid" : "3350f07ba1bba99f",
-          "parentUid" : "20ce66b55513b373a7fb2527fccc3cf5",
-          "status" : "broken",
-          "time" : {
-            "start" : 1632575182679,
-            "stop" : 1632575184498,
-            "duration" : 1819
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ " ", " ", "Epic sadface: Username is required" ]
-        }, {
-          "name" : "loginToApplication_Test",
-          "uid" : "1a4ba7bf1a70a046",
-          "parentUid" : "20ce66b55513b373a7fb2527fccc3cf5",
-          "status" : "broken",
-          "time" : {
-            "start" : 1632575184511,
-            "stop" : 1632575185674,
-            "duration" : 1163
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ "@_", "!&", "Epic sadface: Username and password do not match any user in this service" ]
-        }, {
-          "name" : "loginToApplication_Test",
-          "uid" : "aa5091ae834b2505",
-          "parentUid" : "20ce66b55513b373a7fb2527fccc3cf5",
-          "status" : "broken",
-          "time" : {
-            "start" : 1632575185679,
-            "stop" : 1632575187226,
-            "duration" : 1547
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ "user", "sauce", "Epic sadface: Username and password do not match any user in this service" ]
-        }, {
-          "name" : "loginToApplication_Test",
-          "uid" : "bd1f881f7663a28f",
-          "parentUid" : "20ce66b55513b373a7fb2527fccc3cf5",
-          "status" : "broken",
-          "time" : {
-            "start" : 1632575187232,
-            "stop" : 1632575188130,
-            "duration" : 898
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ "КрПне", "ьтРа", "Epic sadface: Username and password do not match any user in this service" ]
+          "parameters" : [ ]
         } ],
-        "uid" : "20ce66b55513b373a7fb2527fccc3cf5"
+        "uid" : "ecf5feec55e8f0ef1d90c73f3d031e08"
       } ],
-      "uid" : "c80ee7e72b1b9e6b164c39661214593e"
+      "uid" : "12bfc0a02d0ed2a1793832147b240b05"
     }, {
-      "name" : "Sort items",
+      "name" : "Dynamic Controls Input",
       "children" : [ {
-        "name" : "Task_10_2",
+        "name" : "HerokuApp.Input",
         "children" : [ {
-          "name" : "Links_Test_LowToHigh",
-          "uid" : "9b50c55ead43bead",
-          "parentUid" : "8e78927942ebf654e8dbceb0b94c5ec5",
-          "status" : "passed",
+          "name" : "dynamicControlsInput_Test",
+          "uid" : "ad9e90ec03c2778a",
+          "parentUid" : "e577300fc92aff8b213372f9a63bac4f",
+          "status" : "broken",
           "time" : {
-            "start" : 1632575177362,
-            "stop" : 1632575182205,
-            "duration" : 4843
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Links_Test_HighToLow",
-          "uid" : "e31d3d898718cae2",
-          "parentUid" : "8e78927942ebf654e8dbceb0b94c5ec5",
-          "status" : "passed",
-          "time" : {
-            "start" : 1632575182261,
-            "stop" : 1632575183310,
-            "duration" : 1049
+            "start" : 1632853511718,
+            "stop" : 1632853525395,
+            "duration" : 13677
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "8e78927942ebf654e8dbceb0b94c5ec5"
+        "uid" : "e577300fc92aff8b213372f9a63bac4f"
       } ],
-      "uid" : "2f1060b106384bf0e401a713c55db3d8"
+      "uid" : "a3bc55f85fb1baea677a57222e65a2e1"
     } ],
-    "uid" : "9a362966916d8a24cddd019c70290f9f"
+    "uid" : "6eac9dbcbe1301d69afefafc1f072ded"
   } ]
 }

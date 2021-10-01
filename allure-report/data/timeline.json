@@ -4,117 +4,35 @@
   "children" : [ {
     "name" : "DESKTOP-JBSCKF2",
     "children" : [ {
-      "name" : "4752@DESKTOP-JBSCKF2.TestNG-tests-1(14)",
+      "name" : "11832@DESKTOP-JBSCKF2.main(1)",
       "children" : [ {
-        "name" : "loginToApplication_Test",
-        "uid" : "bd1f881f7663a28f",
-        "parentUid" : "ec70dc79243301cdaf37277f4f884db0",
+        "name" : "dynamicControlsInput_Test",
+        "uid" : "ad9e90ec03c2778a",
+        "parentUid" : "052f803716b332bbaa610d699b761684",
         "status" : "broken",
         "time" : {
-          "start" : 1632575187232,
-          "stop" : 1632575188130,
-          "duration" : 898
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "КрПне", "ьтРа", "Epic sadface: Username and password do not match any user in this service" ]
-      }, {
-        "name" : "loginToApplication_Test",
-        "uid" : "1533d2ff66417b6f",
-        "parentUid" : "ec70dc79243301cdaf37277f4f884db0",
-        "status" : "passed",
-        "time" : {
-          "start" : 1632575164707,
-          "stop" : 1632575174216,
-          "duration" : 9509
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "standard_user", "secret_sauce", "null" ]
-      }, {
-        "name" : "loginToApplication_Test",
-        "uid" : "3350f07ba1bba99f",
-        "parentUid" : "ec70dc79243301cdaf37277f4f884db0",
-        "status" : "broken",
-        "time" : {
-          "start" : 1632575182679,
-          "stop" : 1632575184498,
-          "duration" : 1819
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ " ", " ", "Epic sadface: Username is required" ]
-      }, {
-        "name" : "loginToApplication_Test",
-        "uid" : "1a4ba7bf1a70a046",
-        "parentUid" : "ec70dc79243301cdaf37277f4f884db0",
-        "status" : "broken",
-        "time" : {
-          "start" : 1632575184511,
-          "stop" : 1632575185674,
-          "duration" : 1163
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "@_", "!&", "Epic sadface: Username and password do not match any user in this service" ]
-      }, {
-        "name" : "loginToApplication_Test",
-        "uid" : "c53bf994fd5f69e6",
-        "parentUid" : "ec70dc79243301cdaf37277f4f884db0",
-        "status" : "broken",
-        "time" : {
-          "start" : 1632575178745,
-          "stop" : 1632575182648,
-          "duration" : 3903
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "123", "123", "Epic sadface: Username and password do not match any user in this service" ]
-      }, {
-        "name" : "loginToApplication_Test",
-        "uid" : "aa5091ae834b2505",
-        "parentUid" : "ec70dc79243301cdaf37277f4f884db0",
-        "status" : "broken",
-        "time" : {
-          "start" : 1632575185679,
-          "stop" : 1632575187226,
-          "duration" : 1547
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "user", "sauce", "Epic sadface: Username and password do not match any user in this service" ]
-      } ],
-      "uid" : "ec70dc79243301cdaf37277f4f884db0"
-    }, {
-      "name" : "4752@DESKTOP-JBSCKF2.TestNG-tests-2(15)",
-      "children" : [ {
-        "name" : "Links_Test_LowToHigh",
-        "uid" : "9b50c55ead43bead",
-        "parentUid" : "a7ff6076a6667daeef120f3bef0f8193",
-        "status" : "passed",
-        "time" : {
-          "start" : 1632575177362,
-          "stop" : 1632575182205,
-          "duration" : 4843
+          "start" : 1632853511718,
+          "stop" : 1632853525395,
+          "duration" : 13677
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Links_Test_HighToLow",
-        "uid" : "e31d3d898718cae2",
-        "parentUid" : "a7ff6076a6667daeef120f3bef0f8193",
+        "name" : "dynamicControlsCheckbox_Test",
+        "uid" : "8e60277e1993a1bc",
+        "parentUid" : "052f803716b332bbaa610d699b761684",
         "status" : "passed",
         "time" : {
-          "start" : 1632575182261,
-          "stop" : 1632575183310,
-          "duration" : 1049
+          "start" : 1632853466814,
+          "stop" : 1632853492697,
+          "duration" : 25883
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "a7ff6076a6667daeef120f3bef0f8193"
+      "uid" : "052f803716b332bbaa610d699b761684"
     } ],
     "uid" : "f8c537a3334f97b81d859e634d2a5eb6"
   } ]

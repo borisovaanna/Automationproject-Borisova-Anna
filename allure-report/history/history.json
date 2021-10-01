@@ -1,5 +1,5 @@
 {
-  "6ae3e0c9ea6fee09fdb2b3a0b84961df" : {
+  "3d14238a723b2156cb7df3893bfd9ea9" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -9,16 +9,16 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e31d3d898718cae2",
+      "uid" : "8e60277e1993a1bc",
       "status" : "passed",
       "time" : {
-        "start" : 1632575182261,
-        "stop" : 1632575183310,
-        "duration" : 1049
+        "start" : 1632853466814,
+        "stop" : 1632853492697,
+        "duration" : 25883
       }
     } ]
   },
-  "5fa31881e2782f41c5aa83a8b1844ac7" : {
+  "bdc717a51c769725dc58d2771ed4604" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 1,
@@ -28,131 +28,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1a4ba7bf1a70a046",
+      "uid" : "ad9e90ec03c2778a",
       "status" : "broken",
-      "statusDetails" : "\nMethod Task_10.loginToApplication_Test(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task_10@4a7761b1] should have thrown an exception of type class java.lang.AssertionError",
+      "statusDetails" : "Expected condition failed: waiting for element found by By.cssSelector: #input-example>p to have text \"It's enabled!\". Current text: \"null\" (tried for 10 second(s) with 500 milliseconds interval)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-JBSCKF2', ip: '192.168.100.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\\Users\\Slomali.by\\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:58831}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}",
       "time" : {
-        "start" : 1632575184511,
-        "stop" : 1632575185674,
-        "duration" : 1163
-      }
-    } ]
-  },
-  "b92d8379c14253b145e9bbdb50961b0f" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "3350f07ba1bba99f",
-      "status" : "broken",
-      "statusDetails" : "\nMethod Task_10.loginToApplication_Test(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task_10@4a7761b1] should have thrown an exception of type class java.lang.AssertionError",
-      "time" : {
-        "start" : 1632575182679,
-        "stop" : 1632575184498,
-        "duration" : 1819
-      }
-    } ]
-  },
-  "21e6f2c698febe6992b3ee557a2e4964" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "9b50c55ead43bead",
-      "status" : "passed",
-      "time" : {
-        "start" : 1632575177362,
-        "stop" : 1632575182205,
-        "duration" : 4843
-      }
-    } ]
-  },
-  "44621de8b961185417148269c48207ac" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "1533d2ff66417b6f",
-      "status" : "passed",
-      "time" : {
-        "start" : 1632575164707,
-        "stop" : 1632575174216,
-        "duration" : 9509
-      }
-    } ]
-  },
-  "5124bc622dbe071016349b34bf7c7bac" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "bd1f881f7663a28f",
-      "status" : "broken",
-      "statusDetails" : "\nMethod Task_10.loginToApplication_Test(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task_10@4a7761b1] should have thrown an exception of type class java.lang.AssertionError",
-      "time" : {
-        "start" : 1632575187232,
-        "stop" : 1632575188130,
-        "duration" : 898
-      }
-    } ]
-  },
-  "35e459066039649c891f7e6246bce0e1" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "c53bf994fd5f69e6",
-      "status" : "broken",
-      "statusDetails" : "\nMethod Task_10.loginToApplication_Test(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task_10@4a7761b1] should have thrown an exception of type class java.lang.AssertionError",
-      "time" : {
-        "start" : 1632575178745,
-        "stop" : 1632575182648,
-        "duration" : 3903
-      }
-    } ]
-  },
-  "39df223a00f9f0173bbcf1f5639e8cfd" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "aa5091ae834b2505",
-      "status" : "broken",
-      "statusDetails" : "\nMethod Task_10.loginToApplication_Test(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task_10@4a7761b1] should have thrown an exception of type class java.lang.AssertionError",
-      "time" : {
-        "start" : 1632575185679,
-        "stop" : 1632575187226,
-        "duration" : 1547
+        "start" : 1632853511718,
+        "stop" : 1632853525395,
+        "duration" : 13677
       }
     } ]
   }

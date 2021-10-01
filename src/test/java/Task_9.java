@@ -4,12 +4,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class Task_9 extends BaseTest {
-    LoginPage loginPage = new LoginPage();
-    ProductPage productPage = new ProductPage();
-    CartPage cartPage = new CartPage();
-    CheckoutPage checkoutPage = new CheckoutPage();
-    CheckoutOverviewPage checkoutOverviewPage = new CheckoutOverviewPage();
-    CheckoutCompletePage checkoutCompletePage = new CheckoutCompletePage();
+    LoginPage loginPage = new LoginPage(driver);
+    ProductPage productPage = new ProductPage(driver);
+    CartPage cartPage = new CartPage(driver);
+    CheckoutPage checkoutPage = new CheckoutPage(driver);
+    CheckoutOverviewPage checkoutOverviewPage = new CheckoutOverviewPage(driver);
+    CheckoutCompletePage checkoutCompletePage = new CheckoutCompletePage(driver);
 
     @BeforeMethod
     public void preconditions(){

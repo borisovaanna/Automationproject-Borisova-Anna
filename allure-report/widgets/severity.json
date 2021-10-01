@@ -1,80 +1,20 @@
 [ {
-  "uid" : "aa5091ae834b2505",
-  "name" : "loginToApplication_Test",
+  "uid" : "8e60277e1993a1bc",
+  "name" : "dynamicControlsCheckbox_Test",
   "time" : {
-    "start" : 1632575185679,
-    "stop" : 1632575187226,
-    "duration" : 1547
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "1533d2ff66417b6f",
-  "name" : "loginToApplication_Test",
-  "time" : {
-    "start" : 1632575164707,
-    "stop" : 1632575174216,
-    "duration" : 9509
+    "start" : 1632853466814,
+    "stop" : 1632853492697,
+    "duration" : 25883
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e31d3d898718cae2",
-  "name" : "Links_Test_HighToLow",
+  "uid" : "ad9e90ec03c2778a",
+  "name" : "dynamicControlsInput_Test",
   "time" : {
-    "start" : 1632575182261,
-    "stop" : 1632575183310,
-    "duration" : 1049
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1a4ba7bf1a70a046",
-  "name" : "loginToApplication_Test",
-  "time" : {
-    "start" : 1632575184511,
-    "stop" : 1632575185674,
-    "duration" : 1163
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "9b50c55ead43bead",
-  "name" : "Links_Test_LowToHigh",
-  "time" : {
-    "start" : 1632575177362,
-    "stop" : 1632575182205,
-    "duration" : 4843
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3350f07ba1bba99f",
-  "name" : "loginToApplication_Test",
-  "time" : {
-    "start" : 1632575182679,
-    "stop" : 1632575184498,
-    "duration" : 1819
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "bd1f881f7663a28f",
-  "name" : "loginToApplication_Test",
-  "time" : {
-    "start" : 1632575187232,
-    "stop" : 1632575188130,
-    "duration" : 898
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "c53bf994fd5f69e6",
-  "name" : "loginToApplication_Test",
-  "time" : {
-    "start" : 1632575178745,
-    "stop" : 1632575182648,
-    "duration" : 3903
+    "start" : 1632853511718,
+    "stop" : 1632853525395,
+    "duration" : 13677
   },
   "status" : "broken",
   "severity" : "normal"

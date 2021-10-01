@@ -1,24 +1,22 @@
 {
-  "uid" : "1533d2ff66417b6f",
-  "name" : "loginToApplication_Test",
-  "fullName" : "Task_10.loginToApplication_Test",
-  "historyId" : "44621de8b961185417148269c48207ac",
+  "uid" : "8e60277e1993a1bc",
+  "name" : "dynamicControlsCheckbox_Test",
+  "fullName" : "HerokuApp.Checkbox.dynamicControlsCheckbox_Test",
+  "historyId" : "3d14238a723b2156cb7df3893bfd9ea9",
   "time" : {
-    "start" : 1632575164707,
-    "stop" : 1632575174216,
-    "duration" : 9509
+    "start" : 1632853466814,
+    "stop" : 1632853492697,
+    "duration" : 25883
   },
-  "description" : "Login to app",
-  "descriptionHtml" : "<p>Login to app</p>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "setUpDriver",
+    "name" : "preconditions",
     "time" : {
-      "start" : 1632575144355,
-      "stop" : 1632575156547,
-      "duration" : 12192
+      "start" : 1632853456207,
+      "stop" : 1632853466435,
+      "duration" : 10228
     },
     "description" : "",
     "status" : "passed",
@@ -30,11 +28,11 @@
     "shouldDisplayMessage" : false,
     "attachmentsCount" : 0
   }, {
-    "name" : "preconditions",
+    "name" : "setUpDriver",
     "time" : {
-      "start" : 1632575156549,
-      "stop" : 1632575161110,
-      "duration" : 4561
+      "start" : 1632853456041,
+      "stop" : 1632853456065,
+      "duration" : 24
     },
     "description" : "",
     "status" : "passed",
@@ -49,9 +47,9 @@
   "afterStages" : [ {
     "name" : "closeDriver",
     "time" : {
-      "start" : 1632575188135,
-      "stop" : 1632575191312,
-      "duration" : 3177
+      "start" : 1632853493158,
+      "stop" : 1632853495250,
+      "duration" : 2092
     },
     "description" : "",
     "status" : "passed",
@@ -65,28 +63,28 @@
   } ],
   "labels" : [ {
     "name" : "package",
-    "value" : "Task_10"
+    "value" : "HerokuApp.Checkbox"
   }, {
     "name" : "testClass",
-    "value" : "Task_10"
+    "value" : "HerokuApp.Checkbox"
   }, {
     "name" : "testMethod",
-    "value" : "loginToApplication_Test"
+    "value" : "dynamicControlsCheckbox_Test"
   }, {
     "name" : "parentSuite",
-    "value" : "Lecture 10"
+    "value" : "Lecture 12"
   }, {
     "name" : "suite",
-    "value" : "Login to app"
+    "value" : "Dynamic Controls Checkbox"
   }, {
     "name" : "subSuite",
-    "value" : "Task_10"
+    "value" : "HerokuApp.Checkbox"
   }, {
     "name" : "host",
     "value" : "DESKTOP-JBSCKF2"
   }, {
     "name" : "thread",
-    "value" : "4752@DESKTOP-JBSCKF2.TestNG-tests-1(14)"
+    "value" : "11832@DESKTOP-JBSCKF2.main(1)"
   }, {
     "name" : "framework",
     "value" : "testng"
@@ -97,16 +95,7 @@
     "name" : "resultFormat",
     "value" : "allure2"
   } ],
-  "parameters" : [ {
-    "name" : "arg0",
-    "value" : "standard_user"
-  }, {
-    "name" : "arg1",
-    "value" : "secret_sauce"
-  }, {
-    "name" : "arg2",
-    "value" : "null"
-  } ],
+  "parameters" : [ ],
   "links" : [ ],
   "hidden" : false,
   "retry" : false,
@@ -116,6 +105,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "1533d2ff66417b6f.json",
-  "parameterValues" : [ "standard_user", "secret_sauce", "null" ]
+  "source" : "8e60277e1993a1bc.json",
+  "parameterValues" : [ ]
 }

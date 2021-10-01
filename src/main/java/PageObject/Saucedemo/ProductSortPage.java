@@ -1,7 +1,9 @@
 package PageObject.Saucedemo;
 
+import PageObject.BasePage;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import java.util.Comparator;
@@ -10,7 +12,7 @@ import java.util.stream.Collectors;
 
 import static driver.DriverCreation.getDriver;
 
-public class ProductSortPage extends BasePage{
+public class ProductSortPage extends BasePage {
     private By productSortContainer = By.cssSelector(".product_sort_container");
     private By SortAz = By.xpath("//option[@value = \"az\"]");
     private By SortZa = By.xpath("//option[@value = \"za\"]");
@@ -18,6 +20,10 @@ public class ProductSortPage extends BasePage{
     private By SortPriceHighLow = By.xpath("//option[@value = \"hilo\"]");
     private By products = By.xpath("//div[@class = 'inventory_item_name']");
     private By prices = By.xpath("//div[@class = 'inventory_item_price']");
+
+    public ProductSortPage(WebDriver driver) {
+        super(driver);
+    }
 
     public ProductSortPage clickProductSortContainer() {
         click(productSortContainer);

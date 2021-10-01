@@ -1,14 +1,20 @@
 package PageObject.Saucedemo;
 
+import PageObject.BasePage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-public class CheckoutCompletePage extends BasePage{
+public class CheckoutCompletePage extends BasePage {
     private By titleOfCheckoutComplete = By.xpath("//span[@class = \"title\"]");
     private By header = By.cssSelector(".complete-header");
     private By text = By.cssSelector(".complete-text");
     private By logo = By.xpath("//img[@class = \"pony_express\"]");
     private By backHomeBtn = By.id("back-to-products");
+
+    public CheckoutCompletePage(WebDriver driver) {
+        super(driver);
+    }
 
     public CheckoutCompletePage verifyCheckoutCompletePage() {
         isDisplayed(titleOfCheckoutComplete);
