@@ -9,9 +9,9 @@ import org.testng.annotations.*;
 import static PageObject.Saucedemo.ProductSortPage.Links.*;
 
 public class Task_10_2 extends BaseTest {
-    LoginPage loginPage = new LoginPage();
-    ProductPage productPage = new ProductPage();
-    ProductSortPage productSortPage = new ProductSortPage();
+    LoginPage loginPage = new LoginPage(driver);
+    ProductPage productPage = new ProductPage(driver);
+    ProductSortPage productSortPage = new ProductSortPage(driver);
 
     @BeforeClass(groups = "Tests about price sort")
     public void preconditions(){
@@ -51,10 +51,5 @@ public class Task_10_2 extends BaseTest {
                 .clickProductSortContainer()
                 .clicklinks(ZA)
                 .checkReverseSortNames();
-    }
-
-    @AfterClass(groups = "Tests about price sort")
-    public void postconditions(){
-        closeDriver();
     }
 }

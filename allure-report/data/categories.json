@@ -4,74 +4,22 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "\nMethod Task_10.loginToApplication_Test(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Task_10@4a7761b1] should have thrown an exception of type class java.lang.AssertionError",
+      "name" : "Expected condition failed: waiting for element found by By.cssSelector: #input-example>p to have text \"It's enabled!\". Current text: \"null\" (tried for 10 second(s) with 500 milliseconds interval)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-JBSCKF2', ip: '192.168.100.62', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\\Users\\Slomali.by\\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:58831}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}",
       "children" : [ {
-        "name" : "loginToApplication_Test",
-        "uid" : "c53bf994fd5f69e6",
-        "parentUid" : "c07542f01580629a8b85a0e847d90020",
+        "name" : "dynamicControlsInput_Test",
+        "uid" : "ad9e90ec03c2778a",
+        "parentUid" : "0c3ac0f9d3cd3aff9bcb83134ae21d7e",
         "status" : "broken",
         "time" : {
-          "start" : 1632575178745,
-          "stop" : 1632575182648,
-          "duration" : 3903
+          "start" : 1632853511718,
+          "stop" : 1632853525395,
+          "duration" : 13677
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "123", "123", "Epic sadface: Username and password do not match any user in this service" ]
-      }, {
-        "name" : "loginToApplication_Test",
-        "uid" : "3350f07ba1bba99f",
-        "parentUid" : "c07542f01580629a8b85a0e847d90020",
-        "status" : "broken",
-        "time" : {
-          "start" : 1632575182679,
-          "stop" : 1632575184498,
-          "duration" : 1819
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ " ", " ", "Epic sadface: Username is required" ]
-      }, {
-        "name" : "loginToApplication_Test",
-        "uid" : "1a4ba7bf1a70a046",
-        "parentUid" : "c07542f01580629a8b85a0e847d90020",
-        "status" : "broken",
-        "time" : {
-          "start" : 1632575184511,
-          "stop" : 1632575185674,
-          "duration" : 1163
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "@_", "!&", "Epic sadface: Username and password do not match any user in this service" ]
-      }, {
-        "name" : "loginToApplication_Test",
-        "uid" : "aa5091ae834b2505",
-        "parentUid" : "c07542f01580629a8b85a0e847d90020",
-        "status" : "broken",
-        "time" : {
-          "start" : 1632575185679,
-          "stop" : 1632575187226,
-          "duration" : 1547
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "user", "sauce", "Epic sadface: Username and password do not match any user in this service" ]
-      }, {
-        "name" : "loginToApplication_Test",
-        "uid" : "bd1f881f7663a28f",
-        "parentUid" : "c07542f01580629a8b85a0e847d90020",
-        "status" : "broken",
-        "time" : {
-          "start" : 1632575187232,
-          "stop" : 1632575188130,
-          "duration" : 898
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "КрПне", "ьтРа", "Epic sadface: Username and password do not match any user in this service" ]
+        "parameters" : [ ]
       } ],
-      "uid" : "c07542f01580629a8b85a0e847d90020"
+      "uid" : "0c3ac0f9d3cd3aff9bcb83134ae21d7e"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]

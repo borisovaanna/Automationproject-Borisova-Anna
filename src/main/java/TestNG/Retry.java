@@ -1,4 +1,4 @@
-package driver;
+package TestNG;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;

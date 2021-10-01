@@ -1,8 +1,8 @@
 package PageObject.HerokuApp;
 
-import PageObject.Saucedemo.BasePage;
+import PageObject.BasePage;
 import org.openqa.selenium.By;
-import java.util.Arrays;
+import org.openqa.selenium.WebDriver;
 
 public class HomePage extends BasePage {
     private By title = By.tagName("h1");
@@ -11,18 +11,21 @@ public class HomePage extends BasePage {
     private By getLink(HomePageLinksEnum homePageLinksEnum) {
         return By.linkText(homePageLinksEnum.getLinkText());
     }
-    private By getLink(String homePageLinksEnum) {
-        return By.linkText(homePageLinksEnum);
+
+    public HomePage(WebDriver driver) {
+        super(driver);
     }
 
     public HomePage openPage() {
-        open("http://the-internet.herokuapp.com");
+        open();
         return this;
     }
 
     public HomePage verifyHomePage() {
         isDisplayed(title, subTitle);
-        Arrays.asList(HomePageLinksEnum.values()).forEach(homePageLinksEnum -> isDisplayed(getLink(homePageLinksEnum)));
+        for (HomePageLinksEnum homePageLinksEnum : HomePageLinksEnum.values()){
+            isDisplayed(getLink(homePageLinksEnum));
+        }
         return this;
     }
 

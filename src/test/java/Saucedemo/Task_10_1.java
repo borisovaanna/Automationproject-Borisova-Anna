@@ -4,14 +4,14 @@ import PageObject.Saucedemo.CartPage;
 import PageObject.Saucedemo.LoginPage;
 import PageObject.Saucedemo.ProductPage;
 import driver.BaseTest;
-import driver.Retry;
+import TestNG.Retry;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class Task_10_1 extends BaseTest {
-    LoginPage loginPage = new LoginPage();
-    ProductPage productPage = new ProductPage();
-    CartPage cartPage = new CartPage();
+    LoginPage loginPage = new LoginPage(driver);
+    ProductPage productPage = new ProductPage(driver);
+    CartPage cartPage = new CartPage(driver);
 
     @BeforeTest
     public void preconditions(){
