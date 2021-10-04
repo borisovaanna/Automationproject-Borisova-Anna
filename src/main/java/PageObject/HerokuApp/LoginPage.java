@@ -1,4 +1,4 @@
-package PageObject.Saucedemo;
+package PageObject.HerokuApp;
 
 import PageObject.BasePage;
 import Patterns.LoginBuilder;
@@ -7,10 +7,10 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 public class LoginPage extends BasePage {
-    private By username = By.id("user-name");
+    private By username = By.id("username");
     private By password = By.id("password");
-    private By loginBtn = By.id("login-button");
-    private By errorTxt = By.xpath("//h3[@data-test = \"error\"]");
+    private By loginBtn = By.cssSelector(".radius");
+    private By successTxt = By.cssSelector(".flash.success");
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -55,8 +55,8 @@ public class LoginPage extends BasePage {
         return this;
     }
 
-    public LoginPage checkErrorText(String expectedText) {
-        Assert.assertEquals(getTextElement(errorTxt), expectedText);
+    public LoginPage verifySuccessText() {
+        isDisplayed(successTxt);
         return this;
     }
 }

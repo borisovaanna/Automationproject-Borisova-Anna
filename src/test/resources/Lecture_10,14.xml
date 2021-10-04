@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lecture 10,14">
+    <parameter name="env" value="saucedemo"/>
+    <test name="Login to application" enabled="false">
+        <classes>
+            <class name="Task_10.Task_10"></class>
+        </classes>
+    </test>
+    <test name="Actions with item" enabled="false">
+        <classes>
+            <class name="Task_10.Task_10_1"></class>
+        </classes>
+    </test>
+    <test name="Sort items" enabled="false">
+        <groups>
+            <run>
+                <include name="Tests about price sort"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="Task_10.Task_10_2"></class>
+        </classes>
+    </test>
+    <test name="Authorization to Saucedemo">
+        <classes>
+            <class name="Task_14.Task_14_Saucedemo"></class>
+        </classes>
+    </test>
+</suite>

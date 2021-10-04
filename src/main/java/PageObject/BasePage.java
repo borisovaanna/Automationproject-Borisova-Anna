@@ -17,9 +17,12 @@ public class BasePage {
 
     protected BasePage(WebDriver driver){
         this.driver = driver;
-        wait = new WebDriverWait(driver, 5);
+        wait = new WebDriverWait(driver, 10);
         actions = new Actions(driver);
         properties = PropertyReader.getProperties();
+    }
+
+    public BasePage() {
     }
 
     protected void open(){
@@ -45,7 +48,6 @@ public class BasePage {
 
     protected void isDisplayed(By...elements){
         for(By element : elements){
-            System.out.println("Verify element :: " + element);
             Assert.assertFalse(driver.findElements(element).isEmpty(), "Element :: " + elements + " is not exist.");
         }
     }

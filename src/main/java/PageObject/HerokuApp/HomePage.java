@@ -16,11 +16,6 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
-    public HomePage openPage() {
-        open();
-        return this;
-    }
-
     public HomePage verifyHomePage() {
         isDisplayed(title, subTitle);
         for (HomePageLinksEnum homePageLinksEnum : HomePageLinksEnum.values()){
