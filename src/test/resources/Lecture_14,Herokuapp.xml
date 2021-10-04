@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Welcome to the-internet LoginPage">
+    <parameter name="env" value="herokuappLogin"/>
+    <test name="Authorization on LoginPage to Welcome to the-internet">
+        <classes>
+            <class name="Task_14.Task_14_Herokuapp"/>
+        </classes>
+    </test>
+</suite>

@@ -1,6 +1,7 @@
-package Saucedemo;
+package Task_10;
 
 import PageObject.Saucedemo.LoginPage;
+import Patterns.LoginPage_PageFactory_Saucedemo;
 import driver.BaseTest;
 import TestNG.Listener;
 import io.qameta.allure.Description;
@@ -43,4 +44,5 @@ public class Task_10 extends BaseTest {
                     .loginToApplication(username, password);
             Assert.assertEquals(error, "Epic sadface: Username and password do not match any user in this service");}
     }
+
 }

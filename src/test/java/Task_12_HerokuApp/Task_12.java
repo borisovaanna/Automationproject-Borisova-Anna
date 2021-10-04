@@ -1,21 +1,25 @@
-package HerokuApp;
+package Task_12_HerokuApp;
 
 import PageObject.HerokuApp.DynamicControls;
 import PageObject.HerokuApp.HomePage;
 import PageObject.HerokuApp.HomePageLinksEnum;
+import PageObject.HerokuApp.LoginPage;
 import driver.BaseTest;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class Task_12 extends BaseTest {
     DynamicControls dynamicControls;
     HomePage homePage;
+    LoginPage loginPage;
 
-    @BeforeMethod
+    @BeforeClass
     public void precondition() {
         dynamicControls = new DynamicControls(driver);
         homePage =  new HomePage(driver);
-        homePage.openPage().verifyHomePage().clickLink(HomePageLinksEnum.DYNAMIC_CONTROLS);
+        loginPage = new LoginPage(driver);
+        loginPage.openPage();
+        homePage.verifyHomePage().clickLink(HomePageLinksEnum.DYNAMIC_CONTROLS);
     }
 
     @Test

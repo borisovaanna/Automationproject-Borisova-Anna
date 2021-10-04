@@ -4,7 +4,7 @@
     <parameter name="env" value="herokuapp"/>
     <test name="Dynamic Controls">
         <classes>
-            <class name="HerokuApp.Task_12"/>
+            <class name="Task_12_HerokuApp.Task_12"/>
         </classes>
     </test>
 </suite>

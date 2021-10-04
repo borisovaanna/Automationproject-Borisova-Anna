@@ -1,4 +1,4 @@
-package Saucedemo;
+package Task_10;
 
 import PageObject.Saucedemo.LoginPage;
 import PageObject.Saucedemo.ProductPage;
