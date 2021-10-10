@@ -1,4 +1,4 @@
-package Patterns;
+package NewPatterns;
 
 import PageObject.BasePage;
 import org.openqa.selenium.WebDriver;
@@ -17,8 +17,7 @@ public class LoginPage_PageFactory_Saucedemo extends BasePage {
     @FindBy(id = "login-button")
     WebElement loginBtn;
 
-    public LoginPage_PageFactory_Saucedemo(WebDriver driver) {
-        super(driver);
+    public LoginPage_PageFactory_Saucedemo() {
         PageFactory.initElements(driver, this);
     }
 

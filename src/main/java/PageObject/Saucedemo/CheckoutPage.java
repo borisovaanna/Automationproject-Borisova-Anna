@@ -11,10 +11,6 @@ public class CheckoutPage extends BasePage {
     private By zipCode = By.id("postal-code");
     private By continueBtn = By.id("continue");
 
-    public CheckoutPage(WebDriver driver) {
-        super(driver);
-    }
-
     public CheckoutPage verifyCheckoutPage() {
         isDisplayed(titleOfCheckout);
         return this;

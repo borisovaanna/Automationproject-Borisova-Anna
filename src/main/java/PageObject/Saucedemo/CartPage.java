@@ -15,10 +15,6 @@ public class CartPage extends BasePage {
     private By continueShopBtn = By.id("continue-shopping");
     private By checkoutBtn = By.cssSelector("#checkout");
 
-    public CartPage(WebDriver driver) {
-        super(driver);
-    }
-
     public CartPage verifyCartPage() {
         isDisplayed(titleOfCart, qtyLogo, descriptionLogo);
         return this;

@@ -12,10 +12,6 @@ public class HomePage extends BasePage {
         return By.linkText(homePageLinksEnum.getLinkText());
     }
 
-    public HomePage(WebDriver driver) {
-        super(driver);
-    }
-
     public HomePage verifyHomePage() {
         isDisplayed(title, subTitle);
         for (HomePageLinksEnum homePageLinksEnum : HomePageLinksEnum.values()){

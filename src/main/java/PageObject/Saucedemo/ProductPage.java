@@ -12,10 +12,6 @@ public class ProductPage extends BasePage {
     private By addBtn = By.id("add-to-cart-sauce-labs-backpack");
     private By cartBtn = By.xpath("//a[@class = \"shopping_cart_link\"]");
 
-    public ProductPage(WebDriver driver) {
-        super(driver);
-    }
-
     public ProductPage verifyProductPage() {
         isDisplayed(title, logo, filter);
         return this;

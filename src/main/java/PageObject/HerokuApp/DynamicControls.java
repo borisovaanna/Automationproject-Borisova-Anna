@@ -17,10 +17,6 @@ public class DynamicControls extends BasePage {
     private By enableBtn = By.cssSelector("#input-example>button");
     private By textBackFromEnable = By.cssSelector("#input-example>p");
 
-    public DynamicControls(WebDriver driver) {
-        super(driver);
-    }
-
     public DynamicControls verifyPageTitle() {
         Assert.assertEquals(getTextElement(title), HomePageLinksEnum.DYNAMIC_CONTROLS.getLinkText());
         return this;

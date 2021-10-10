@@ -16,10 +16,6 @@ public class CheckoutOverviewPage extends BasePage {
     private By totalSum = By.xpath("//div[@class = \"summary_total_label\"]");
     private By finishBtm = By.id("finish");
 
-    public CheckoutOverviewPage(WebDriver driver) {
-        super(driver);
-    }
-
     public CheckoutOverviewPage verifyCheckoutOverviewPage() {
         isDisplayed(titleOfCheckoutOverview);
         return this;
