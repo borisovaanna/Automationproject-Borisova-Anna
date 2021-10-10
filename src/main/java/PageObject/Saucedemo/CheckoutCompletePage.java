@@ -12,10 +12,6 @@ public class CheckoutCompletePage extends BasePage {
     private By logo = By.xpath("//img[@class = \"pony_express\"]");
     private By backHomeBtn = By.id("back-to-products");
 
-    public CheckoutCompletePage(WebDriver driver) {
-        super(driver);
-    }
-
     public CheckoutCompletePage verifyCheckoutCompletePage() {
         isDisplayed(titleOfCheckoutComplete);
         return this;

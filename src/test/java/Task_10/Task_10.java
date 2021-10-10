@@ -1,7 +1,6 @@
 package Task_10;
 
 import PageObject.Saucedemo.LoginPage;
-import Patterns.LoginPage_PageFactory_Saucedemo;
 import driver.BaseTest;
 import TestNG.Listener;
 import io.qameta.allure.Description;
@@ -11,7 +10,7 @@ import org.testng.annotations.*;
 @Listeners(Listener.class)
 
 public class Task_10 extends BaseTest {
-    LoginPage loginPage = new LoginPage(driver);
+    LoginPage loginPage = new LoginPage();
 
     @BeforeTest
     public void preconditions() {

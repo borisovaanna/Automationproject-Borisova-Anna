@@ -21,10 +21,6 @@ public class ProductSortPage extends BasePage {
     private By products = By.xpath("//div[@class = 'inventory_item_name']");
     private By prices = By.xpath("//div[@class = 'inventory_item_price']");
 
-    public ProductSortPage(WebDriver driver) {
-        super(driver);
-    }
-
     public ProductSortPage clickProductSortContainer() {
         click(productSortContainer);
         return this;
