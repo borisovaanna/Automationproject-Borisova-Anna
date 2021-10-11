@@ -1,20 +1,17 @@
 package Task_16;
 
-import Task_16.ListResource.DatumListResource;
+import Task_16.DelayedResponse.RootDelayResponse;
 import Task_16.ListResource.RootListResource;
-import Task_16.ListUsers.Datum;
 import Task_16.ListUsers.RootList;
 import Task_16.SingleResource.RootSingleResource;
 import Task_16.SingleUser.Root;
 import com.google.gson.Gson;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -101,22 +98,84 @@ public class Task_16 {
     }
 
     @Test
-    public void CreatePostTest(){  //не идёт
+    public void CreatePostTest(){
         String endpoint = "/api/users";
         String requestBody = readFileAsString("post");
-        Response response = given().body(requestBody).and().post(endpoint).then().extract().response();
+        Response response = given().header("Content-Type", "application/json").and().body(requestBody).and().post(endpoint).then().extract().response();
         Assert.assertEquals(response.statusCode(),201);
         Assert.assertEquals(response.jsonPath().get("name"), "morpheus");
         Assert.assertEquals(response.jsonPath().get("job"), "leader");
     }
 
     @Test
-    public void UpdatePutTest(){  //не идёт
+    public void UpdatePutTest(){
         String endpoint = "/api/users/2";
         String requestBody = readFileAsString("put");
-        Response response = given().body(requestBody).and().put(endpoint).then().extract().response();
+        Response response = given().header("Content-Type", "application/json").and().body(requestBody).and().put(endpoint).then().extract().response();
         Assert.assertEquals(response.statusCode(),200);
         Assert.assertEquals(response.jsonPath().get("name"), "morpheus");
         Assert.assertEquals(response.jsonPath().get("job"), "zion resident");
+    }
+
+    @Test
+    public void UpdatePatchTest(){
+        String endpoint = "/api/users/2";
+        String requestBody = readFileAsString("patch");
+        Response response = given().header("Content-Type", "application/json").and().body(requestBody).and().patch(endpoint).then().extract().response();
+        Assert.assertEquals(response.statusCode(),200);
+        Assert.assertEquals(response.jsonPath().get("name"), "morpheus");
+        Assert.assertEquals(response.jsonPath().get("job"), "zion resident");
+    }
+
+    @Test
+    public void DeleteTest(){
+        String endpoint = "/api/users/2";
+        Response response = given().delete(endpoint).then().extract().response();
+        Assert.assertEquals(response.statusCode(),204);
+    }
+
+    @Test
+    public void PostRegSucTest(){
+        String endpoint = "/api/register";
+        String requestBody = readFileAsString("postRegSuc");
+        Response response = given().header("Content-Type", "application/json").and().body(requestBody).and().post(endpoint).then().extract().response();
+        Assert.assertEquals(response.statusCode(),200);
+        Assert.assertEquals(response.jsonPath().get("token"), "QpwL5tke4Pnpja7X4");
+    }
+
+    @Test
+    public void PostRegUnSucTest(){
+        String endpoint = "/api/register";
+        String requestBody = readFileAsString("postRegUnSuc");
+        Response response = given().header("Content-Type", "application/json").and().body(requestBody).and().post(endpoint).then().extract().response();
+        Assert.assertEquals(response.statusCode(),400);
+        Assert.assertEquals(response.jsonPath().get("error"), "Missing password");
+    }
+
+    @Test
+    public void PostLogSucTest(){
+        String endpoint = "/api/login";
+        String requestBody = readFileAsString("postLogSuc");
+        Response response = given().header("Content-Type", "application/json").and().body(requestBody).and().post(endpoint).then().extract().response();
+        Assert.assertEquals(response.statusCode(),200);
+        Assert.assertEquals(response.jsonPath().get("token"), "QpwL5tke4Pnpja7X4");
+    }
+
+    @Test
+    public void PostLogUnSucTest(){
+        String endpoint = "/api/login";
+        String requestBody = readFileAsString("postLogUnSuc");
+        Response response = given().header("Content-Type", "application/json").and().body(requestBody).and().post(endpoint).then().extract().response();
+        Assert.assertEquals(response.statusCode(),400);
+        Assert.assertEquals(response.jsonPath().get("error"), "Missing password");
+    }
+
+    @Test
+    public void DelayResponseGetTest(){
+        String endpoint = "api/users?delay=4";
+        given().when().get(endpoint).then().statusCode(200);
+        Assert.assertEquals(given().when().get(endpoint).as(RootDelayResponse.class).data.size(), 6);
+        Assert.assertEquals(given().when().get(endpoint).as(RootDelayResponse.class).data.get(2).first_name, "Emma");
+        Assert.assertEquals(given().when().get(endpoint).as(RootDelayResponse.class).data.get(5).email, "tracey.ramos@reqres.in");
     }
 }
