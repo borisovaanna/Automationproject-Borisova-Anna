@@ -2,27 +2,27 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-23T20:29:57 MSK" name="Welcome to the-internet LoginPage" finished-at="2021-10-23T20:31:51 MSK" duration-ms="113894">
+  <suite started-at="2021-10-24T16:23:34 MSK" name="Welcome to the-internet LoginPage" finished-at="2021-10-24T16:25:41 MSK" duration-ms="127311">
     <groups>
     </groups>
-    <test started-at="2021-10-23T20:29:57 MSK" name="Authorization on LoginPage to Welcome to the-internet" finished-at="2021-10-23T20:31:51 MSK" duration-ms="113894">
+    <test started-at="2021-10-24T16:23:34 MSK" name="Authorization on LoginPage to Welcome to the-internet" finished-at="2021-10-24T16:25:41 MSK" duration-ms="127311">
       <class name="Task_14.Task_14_Herokuapp">
-        <test-method is-config="true" signature="setUpDriver(org.testng.ITestContext)[pri:0, instance:Task_14.Task_14_Herokuapp@26457986]" started-at="2021-10-23T20:31:32 MSK" name="setUpDriver" finished-at="2021-10-23T20:31:32 MSK" duration-ms="270" status="PASS">
+        <test-method is-config="true" signature="setUpDriver(org.testng.ITestContext)[pri:0, instance:Task_14.Task_14_Herokuapp@46a123e4]" started-at="2021-10-24T16:25:21 MSK" name="setUpDriver" finished-at="2021-10-24T16:25:21 MSK" duration-ms="218" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@623bdc46]]>
+                <![CDATA[org.testng.TestRunner@4df8443f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method is-config="true" signature="preconditions()[pri:0, instance:Task_14.Task_14_Herokuapp@26457986]" started-at="2021-10-23T20:31:32 MSK" name="preconditions" finished-at="2021-10-23T20:31:44 MSK" duration-ms="12249" status="PASS">
+        <test-method is-config="true" signature="preconditions()[pri:0, instance:Task_14.Task_14_Herokuapp@46a123e4]" started-at="2021-10-24T16:25:21 MSK" name="preconditions" finished-at="2021-10-24T16:25:34 MSK" duration-ms="13653" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preconditions -->
-        <test-method signature="authToHerokuapp_Test()[pri:0, instance:Task_14.Task_14_Herokuapp@26457986]" started-at="2021-10-23T20:31:44 MSK" name="authToHerokuapp_Test" finished-at="2021-10-23T20:31:50 MSK" duration-ms="6078" status="PASS">
+        <test-method signature="authToHerokuapp_Test()[pri:0, instance:Task_14.Task_14_Herokuapp@46a123e4]" started-at="2021-10-24T16:25:34 MSK" name="authToHerokuapp_Test" finished-at="2021-10-24T16:25:41 MSK" duration-ms="6142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authToHerokuapp_Test -->
