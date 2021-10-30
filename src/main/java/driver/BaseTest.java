@@ -13,7 +13,7 @@ public class BaseTest {
     public static WebDriver driver;
 
     @BeforeTest
-    public void setUpDriver(ITestContext context){
+    public void setupDriver(ITestContext context) {
         driver = getDriver();
     }
 }

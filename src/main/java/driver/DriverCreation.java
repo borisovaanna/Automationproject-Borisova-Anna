@@ -18,12 +18,13 @@ public class DriverCreation {
         }
     }
 
-    private static void createDriver() {
+    public static void createDriver() {
         if (PropertyReader.getProperties().containsKey("chrome")) {
             WebDriverManager.chromedriver().setup();
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments(PropertyReader.getProperties().getProperty("chrome").split(";"));
-            driver.set(new ChromeDriver(chromeOptions));
+            WebDriver webDriver = new ChromeDriver(chromeOptions);
+            driver.set(webDriver);
         } else if (PropertyReader.getProperties().containsKey("mozilla")) {
             WebDriverManager.firefoxdriver().setup();
             driver.set(new FirefoxDriver());
@@ -33,12 +34,12 @@ public class DriverCreation {
         }
     }
 
-    public static WebDriver getDriver(){
+    public static WebDriver getDriver() {
         return driver.get();
     }
 
-    public static void quitDriver(){
-        if (driver.get() != null){
+    public static void quitDriver() {
+        if (driver.get() != null) {
             driver.get().close();
             driver.get().quit();
             driver.remove();

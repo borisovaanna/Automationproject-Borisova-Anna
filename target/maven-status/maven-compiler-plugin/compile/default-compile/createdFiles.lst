@@ -1,3 +1,4 @@
+PageObject\Booking\HotelsPage.class
 driver\DriverCreation.class
 PageObject\HerokuApp\LoginPage.class
 PageObject\Moodpanda\AccountPage.class
@@ -9,6 +10,7 @@ PageObject\Saucedemo\LoginPage.class
 TestNG\Listener.class
 PageObject\Saucedemo\CartPage.class
 Properties\PropertyReader.class
+driver\SelenideConfigurations.class
 NewPatterns\LoginBuilder.class
 PageObject\Moodpanda\CreateAccountPage.class
 driver\BaseTestSelenide.class
@@ -22,6 +24,7 @@ MySQL\DBConnector.class
 TestNG\Retry.class
 MySQL\SelectHelper.class
 PageObject\HerokuApp\HomePage.class
+PageObject\Booking\HomePage.class
 PageObject\Saucedemo\ProductSortPage$1.class
 NewPatterns\LoginBuilder$LoginBuilderBuilder.class
 PageObject\Saucedemo\CheckoutOverviewPage.class

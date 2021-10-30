@@ -14,7 +14,6 @@ public class PropertyReader {
         properties = new Properties();
         try {
             properties.load(PropertyReader.class.getClassLoader().getResourceAsStream(name + ".properties"));
-
         } catch (IOException e) {
             e.printStackTrace();
         }

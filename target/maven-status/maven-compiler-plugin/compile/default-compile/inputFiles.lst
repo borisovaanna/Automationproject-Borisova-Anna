@@ -2,6 +2,7 @@ D:\Test-project\Automationproject-Borisova-Anna\src\main\java\PageObject\Moodpan
 D:\Test-project\Automationproject-Borisova-Anna\src\main\java\NewPatterns\LoginBuilder.java
 D:\Test-project\Automationproject-Borisova-Anna\src\main\java\PageObject\HerokuApp\LoginPage.java
 D:\Test-project\Automationproject-Borisova-Anna\src\main\java\PageObject\HerokuApp\HomePageLinksEnum.java
+D:\Test-project\Automationproject-Borisova-Anna\src\main\java\driver\SelenideConfigurations.java
 D:\Test-project\Automationproject-Borisova-Anna\src\main\java\PageObject\HerokuApp\DynamicControls.java
 D:\Test-project\Automationproject-Borisova-Anna\src\main\java\PageObject\HerokuApp\HomePage.java
 D:\Test-project\Automationproject-Borisova-Anna\src\main\java\PageObject\Saucedemo\CheckoutCompletePage.java
@@ -16,6 +17,7 @@ D:\Test-project\Automationproject-Borisova-Anna\src\main\java\PageObject\Moodpan
 D:\Test-project\Automationproject-Borisova-Anna\src\main\java\PageObject\Saucedemo\ProductSortPage.java
 D:\Test-project\Automationproject-Borisova-Anna\src\main\java\MySQL\DBConnector.java
 D:\Test-project\Automationproject-Borisova-Anna\src\main\java\PageObject\BasePage.java
+D:\Test-project\Automationproject-Borisova-Anna\src\main\java\PageObject\Booking\HomePage.java
 D:\Test-project\Automationproject-Borisova-Anna\src\main\java\PageObject\Moodpanda\HomePage.java
 D:\Test-project\Automationproject-Borisova-Anna\src\main\java\driver\BaseTestSelenide.java
 D:\Test-project\Automationproject-Borisova-Anna\src\main\java\NewPatterns\LoginPage_PageFactory_Saucedemo.java
@@ -27,3 +29,4 @@ D:\Test-project\Automationproject-Borisova-Anna\src\main\java\PageObject\Moodpan
 D:\Test-project\Automationproject-Borisova-Anna\src\main\java\TestNG\Listener.java
 D:\Test-project\Automationproject-Borisova-Anna\src\main\java\PageObject\Saucedemo\ProductPage.java
 D:\Test-project\Automationproject-Borisova-Anna\src\main\java\Properties\PropertyReader.java
+D:\Test-project\Automationproject-Borisova-Anna\src\main\java\PageObject\Booking\HotelsPage.java
