@@ -8,6 +8,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import driver.SelenideConfigurations;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,7 +18,6 @@ import java.nio.file.Paths;
 import java.util.Comparator;
 
 import static driver.DriverCreation.getDriver;
-import static driver.DriverCreation.setDriver;
 
 public class Listener implements ITestListener {
 
@@ -31,7 +31,22 @@ public class Listener implements ITestListener {
     public void onStart(ITestContext context) {
         PropertyReader propertyReader = new PropertyReader();
         propertyReader.setProperties(context.getSuite().getParameter("env") == null ? System.getProperties().getProperty("env") : context.getSuite().getParameter("env"));
-        setDriver();
+        new SelenideConfigurations(propertyReader);
+        clearTestsResults();
+    }
+
+    @Override
+    public void onFinish(ITestContext context) {
+        DriverCreation.quitDriver();
+    }
+
+    @Attachment(value = "Screenshots", type = "image/png")
+    private byte[] saveScreenshots(byte[] s) {
+        return s;
+    }
+
+
+    private void clearTestsResults() {
         Path path = Paths.get("allure-results");
         try {
             if (Files.exists(path)) {
@@ -43,15 +58,5 @@ public class Listener implements ITestListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        }
-
-    @Override
-    public void onFinish(ITestContext context) {
-        DriverCreation.quitDriver();
-    }
-
-    @Attachment(value = "screenshots", type = "image/png")
-    private byte[] saveScreenshots(byte[] s){
-        return s;
     }
 }

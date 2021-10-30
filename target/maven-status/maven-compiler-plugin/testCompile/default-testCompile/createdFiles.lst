@@ -8,6 +8,7 @@ Task_16\SingleResource\RootSingleResource.class
 Task_14\Task_14_Saucedemo.class
 Task_16\ListResource\SupportListResource.class
 Task_5.class
+Task_20\Task_20.class
 Task_16\ListUsers\SupportList.class
 Task_7.class
 Task_16\DelayedResponse\SupportDelayResponse.class
@@ -19,6 +20,7 @@ Task_16\SingleUser\Root.class
 GoogleSearchTest.class
 Task_19\Task_19.class
 StreamAPI$1.class
+Task_20\steps\BookingHomePage_Steps.class
 Task_16\ListResource\RootListResource.class
 Task_16\ListUsers\RootList.class
 Task_6.class
